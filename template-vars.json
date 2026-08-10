@@ -1,0 +1,22 @@
+{
+  "PORT": {
+    "defaultValue": "15630",
+    "description": "HTTP port Railway routes to. Must match BICHON_HTTP_PORT.",
+    "isOptional": true
+  },
+  "BICHON_ROOT_DIR": {
+    "defaultValue": "/data",
+    "description": "Absolute path for all persistent data. Mounted as a Railway volume at /data.",
+    "isOptional": true
+  },
+  "BICHON_ENCRYPT_PASSWORD": {
+    "defaultValue": "",
+    "description": "REQUIRED. Password used to encrypt stored credentials (IMAP passwords, OAuth tokens). Use a long random value; changing it later locks out stored accounts.",
+    "isOptional": false
+  },
+  "BICHON_PUBLIC_URL": {
+    "defaultValue": "https://${{RAILWAY_PUBLIC_DOMAIN}}",
+    "description": "Public URL for OAuth redirects and docs links. Auto-resolves to your Railway domain. Override for custom domains.",
+    "isOptional": true
+  }
+}
