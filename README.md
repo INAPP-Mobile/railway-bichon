@@ -1,6 +1,6 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/i4Ac8I)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/AZnqAZ)
 
 ![Bichon OG Image](https://raw.githubusercontent.com/INAPP-Mobile/railway-bichon/main/og-image.svg)
 
@@ -84,10 +84,21 @@ Bichon runs entirely inside a single container on Railway. The Rust server serve
 
 Add a Railway Volume at `/data` to persist your mail archive across restarts.
 
+## Default Admin Credentials
+
+> ⚠️ **SECURITY WARNING** — Bichon creates a default administrator on first boot with **publicly known credentials** (hardcoded in the open-source code):
+
+| Field | Value |
+|-------|-------|
+| Username | `admin` |
+| Password | `admin@bichon` |
+
+**Change this password immediately after your first login** (Web UI → Users → admin → change password). Leaving it as-is means anyone who knows the default can take over your deployment and read your archived mail.
+
 ## How to Use
 
 1. Click the **Deploy on Railway** button above
 2. Set a strong `BICHON_ENCRYPT_PASSWORD` in the deploy form — this key encrypts your stored credentials. **Keep it safe; changing it later locks out stored accounts**
 3. Add a Railway Volume at `/data` for persistence
-4. Once deployed, open your Railway URL and create the admin account
+4. Once deployed, open your Railway URL and log in with `admin` / `admin@bichon`, then **change the password immediately**
 5. Connect an email account (OAuth or IMAP password) and start archiving
