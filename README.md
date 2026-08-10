@@ -1,6 +1,6 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/AZnqAZ)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/bichon-1)
 
 ![Bichon OG Image](https://raw.githubusercontent.com/INAPP-Mobile/railway-bichon/main/og-image.svg)
 
