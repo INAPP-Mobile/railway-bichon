@@ -3,13 +3,17 @@
     "value": "15630",
     "description": "HTTP port Railway routes to. Must match BICHON_HTTP_PORT."
   },
+  "BICHON_HTTP_PORT": {
+    "value": "15630",
+    "description": "Internal HTTP port the Bichon server listens on. Must match PORT."
+  },
   "BICHON_ROOT_DIR": {
     "value": "/data",
     "description": "Absolute path for all persistent data. Mounted as a Railway volume at /data."
   },
   "BICHON_ENCRYPT_PASSWORD": {
-    "value": "",
-    "description": "REQUIRED. Password used to encrypt stored credentials (IMAP passwords, OAuth tokens). Use a long random value; changing it later locks out stored accounts."
+    "value": "${{secret(32)}}",
+    "description": "REQUIRED. Password used to encrypt stored credentials (IMAP passwords, OAuth tokens). Auto-generated a random 32-char secret per deployment — keep it to access stored accounts later; changing it locks out stored accounts."
   },
   "BICHON_PUBLIC_URL": {
     "value": "https://${{RAILWAY_PUBLIC_DOMAIN}}",
