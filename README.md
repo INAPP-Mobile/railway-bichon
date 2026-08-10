@@ -1,8 +1,8 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/bichon)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/NMQBN7)
 
-![Bichon OG Image](https://raw.githubusercontent.com/INAPP-Mobile/bichon/main/og-image.svg)
+![Bichon OG Image](https://raw.githubusercontent.com/INAPP-Mobile/railway-bichon/main/og-image.svg)
 
 Bichon is an end-to-end encrypted email storage and management server with a modern Web UI. Connect any number of IMAP email accounts and have all mail archived, searchable, and exportable — with credentials encrypted at rest by your own key. Deploy it on Railway in minutes.
 
