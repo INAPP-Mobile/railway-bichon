@@ -15,7 +15,7 @@
 #   • Upstream image runs as root and has a healthcheck on /api/status.
 # =============================================================================
 
-FROM rustmailer/bichon:2.0.2
+FROM rustmailer/bichon:2.0.3
 
 LABEL org.opencontainers.image.source="https://github.com/INAPP-Mobile/bichon"
 
